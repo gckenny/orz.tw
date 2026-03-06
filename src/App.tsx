@@ -109,7 +109,7 @@ function App() {
     const loading = document.getElementById('loading')
     if (loading) {
       loading.classList.add('fade-out')
-      setTimeout(() => loading.remove(), 300)
+      setTimeout(() => loading.remove(), 500)
     }
   }, [])
 
