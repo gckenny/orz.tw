@@ -63,6 +63,12 @@ export const translations = {
     },
     a11y: {
       openMenu: '開啟選單',
+      toggleTheme: '切換主題',
+      toggleLocale: 'Switch to English',
+      fontSize: '字體大小',
+      fontSizeSmall: '小',
+      fontSizeMedium: '中',
+      fontSizeLarge: '大',
     },
   },
   en: {
@@ -127,6 +133,12 @@ export const translations = {
     },
     a11y: {
       openMenu: 'Open menu',
+      toggleTheme: 'Toggle theme',
+      toggleLocale: '切換為中文',
+      fontSize: 'Font size',
+      fontSizeSmall: 'Small',
+      fontSizeMedium: 'Medium',
+      fontSizeLarge: 'Large',
     },
   },
 } as const

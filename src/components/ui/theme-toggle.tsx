@@ -1,9 +1,11 @@
 import { Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { cn } from '@/lib/utils'
+import { useI18n } from '@/i18n/context'
 
 export function ThemeToggle() {
   const [isDark, setIsDark] = useState(true)
+  const { t } = useI18n()
 
   useEffect(() => {
     const stored = localStorage.getItem('theme')
@@ -30,7 +32,7 @@ export function ThemeToggle() {
         "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2",
         "dark:focus:ring-offset-stone-800"
       )}
-      aria-label="切換主題"
+      aria-label={t.a11y.toggleTheme}
     >
       <div
         className={cn(
