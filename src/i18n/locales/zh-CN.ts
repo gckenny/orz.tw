@@ -58,7 +58,7 @@ export const zhCN: TranslationSchema = {
     lineBtn: 'LINE 联系',
   },
   footer: {
-    copyright: '2026 五体工作室 Orz.tw. All rights reserved.',
+    copyright: '2026 Wuti Studio. All rights reserved.',
   },
   a11y: {
     openMenu: '打开菜单',

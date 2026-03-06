@@ -58,7 +58,7 @@ export const zhTW: TranslationSchema = {
     lineBtn: 'LINE 聯繫',
   },
   footer: {
-    copyright: '2026 五體工作室 Orz.tw. All rights reserved.',
+    copyright: '2026 Wuti Studio. All rights reserved.',
   },
   a11y: {
     openMenu: '開啟選單',

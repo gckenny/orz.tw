@@ -58,7 +58,7 @@ export const pt: TranslationSchema = {
     lineBtn: 'Contate-nos no LINE',
   },
   footer: {
-    copyright: '2026 Wuti Studio. Todos os direitos reservados.',
+    copyright: '2026 Wuti Studio. All rights reserved.',
   },
   a11y: {
     openMenu: 'Abrir menu',
