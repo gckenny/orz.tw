@@ -1,5 +1,5 @@
 import { Moon, Sun } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { useI18n } from '@/i18n/context'
 
