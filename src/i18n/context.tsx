@@ -1,38 +1,28 @@
 import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from 'react'
-import { translations, type Locale, type Translations } from './locales'
+import { translations, detectLocale, localeHtmlLang, type Locale, type TranslationSchema } from './locales'
 
 interface I18nContextType {
   locale: Locale
-  t: Translations
-  toggleLocale: () => void
+  t: TranslationSchema
+  setLocale: (locale: Locale) => void
 }
 
 const I18nContext = createContext<I18nContextType | null>(null)
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>(() => {
-    const saved = localStorage.getItem('locale') as Locale | null
-    if (saved === 'en' || saved === 'zh') return saved
-    // Auto-detect: if browser language starts with zh, use zh; otherwise en
-    const browserLang = navigator.language || ''
-    return browserLang.startsWith('zh') ? 'zh' : 'en'
-  })
+  const [locale, setLocaleState] = useState<Locale>(detectLocale)
 
   useEffect(() => {
-    document.documentElement.lang = locale === 'zh' ? 'zh-TW' : 'en'
+    document.documentElement.lang = localeHtmlLang[locale]
   }, [locale])
 
-  const toggleLocale = useCallback(() => {
-    setLocale((prev) => {
-      const next = prev === 'zh' ? 'en' : 'zh'
-      localStorage.setItem('locale', next)
-      document.documentElement.lang = next === 'zh' ? 'zh-TW' : 'en'
-      return next
-    })
+  const setLocale = useCallback((next: Locale) => {
+    setLocaleState(next)
+    localStorage.setItem('locale', next)
   }, [])
 
   return (
-    <I18nContext.Provider value={{ locale, t: translations[locale], toggleLocale }}>
+    <I18nContext.Provider value={{ locale, t: translations[locale], setLocale }}>
       {children}
     </I18nContext.Provider>
   )
