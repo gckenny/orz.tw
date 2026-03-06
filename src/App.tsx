@@ -104,6 +104,15 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Dismiss loading screen
+  useEffect(() => {
+    const loading = document.getElementById('loading')
+    if (loading) {
+      loading.classList.add('fade-out')
+      setTimeout(() => loading.remove(), 300)
+    }
+  }, [])
+
 
   return (
     <div className="min-h-screen bg-light text-dark transition-colors duration-300">

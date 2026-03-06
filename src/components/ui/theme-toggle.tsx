@@ -4,16 +4,11 @@ import { cn } from '@/lib/utils'
 import { useI18n } from '@/i18n/context'
 
 export function ThemeToggle() {
-  const [isDark, setIsDark] = useState(true)
+  const [isDark, setIsDark] = useState(() => {
+    // Inline script in index.html already applied the class, read from DOM
+    return document.documentElement.classList.contains('dark')
+  })
   const { t } = useI18n()
-
-  useEffect(() => {
-    const stored = localStorage.getItem('theme')
-    // Default to dark theme if no preference stored
-    const shouldBeDark = stored ? stored === 'dark' : true
-    setIsDark(shouldBeDark)
-    document.documentElement.classList.toggle('dark', shouldBeDark)
-  }, [])
 
   const toggle = () => {
     const newValue = !isDark
