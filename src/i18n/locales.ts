@@ -123,7 +123,7 @@ export const translations = {
       lineBtn: 'LINE Us',
     },
     footer: {
-      copyright: '2026 Wuti Studio Orz.tw. All rights reserved.',
+      copyright: '2026 Wuti Studio. All rights reserved.',
     },
     a11y: {
       openMenu: 'Open menu',
