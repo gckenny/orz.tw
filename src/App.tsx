@@ -247,10 +247,10 @@ function App() {
               <div className="text-center md:text-left">
                 <h3 className="text-xl sm:text-2xl font-bold text-dark mb-1">Kenny Huang</h3>
                 <p className="text-primary font-semibold mb-4">{t.about.founderRole}</p>
-                <p className="text-muted leading-relaxed mb-3 text-sm sm:text-base">
+                <p className="text-muted leading-relaxed mb-3 text-base">
                   {t.about.founderBio1}
                 </p>
-                <p className="text-muted leading-relaxed text-sm sm:text-base">
+                <p className="text-muted leading-relaxed text-base">
                   {t.about.founderBio2}
                 </p>
               </div>
@@ -277,7 +277,7 @@ function App() {
                       <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white dark:text-teal-50" />
                     </div>
                     <CardTitle className="text-lg sm:text-xl">{service.title}</CardTitle>
-                    <CardDescription className="text-sm sm:text-base">{service.description}</CardDescription>
+                    <CardDescription className="text-base">{service.description}</CardDescription>
                   </CardHeader>
                 </Card>
               )
@@ -304,7 +304,7 @@ function App() {
                       <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white dark:text-teal-50" />
                     </div>
                     <CardTitle className="text-lg sm:text-xl">{item.title}</CardTitle>
-                    <CardDescription className="text-sm sm:text-base">{item.description}</CardDescription>
+                    <CardDescription className="text-base">{item.description}</CardDescription>
                   </CardHeader>
                 </Card>
               )
@@ -330,7 +330,7 @@ function App() {
                     <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-white/90" />
                   </div>
                   <h4 className="text-base sm:text-xl font-semibold mb-1 sm:mb-2">{feature.title}</h4>
-                  <p className="text-white/70 text-xs sm:text-base">{feature.description}</p>
+                  <p className="text-white/70 text-base">{feature.description}</p>
                 </div>
               )
             })}
@@ -344,28 +344,28 @@ function App() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark mb-3">{t.contact.heading}</h2>
           <p className="text-muted text-base sm:text-lg mb-8">{t.contact.subheading}</p>
 
-          <p className="text-muted mb-8 text-sm sm:text-base">
+          <p className="text-muted mb-8 text-base">
             {t.contact.description}
           </p>
 
           <div className="bg-surface-alt rounded-2xl p-6 sm:p-8 mb-8 transition-colors duration-300 border border-transparent dark:border-stone-700/50">
             <div className="space-y-4 sm:space-y-6">
               <div>
-                <p className="text-muted text-xs sm:text-sm">{t.contact.companyLabel}</p>
+                <p className="text-muted text-sm">{t.contact.companyLabel}</p>
                 <p className="text-dark font-semibold text-base sm:text-lg">{t.contact.companyName}</p>
               </div>
               <div>
-                <p className="text-muted text-xs sm:text-sm">{t.contact.taxIdLabel}</p>
+                <p className="text-muted text-sm">{t.contact.taxIdLabel}</p>
                 <p className="text-dark font-semibold text-base sm:text-lg">61231555</p>
               </div>
               <div>
-                <p className="text-muted text-xs sm:text-sm">Email</p>
+                <p className="text-muted text-sm">Email</p>
                 <a href="mailto:gckenny@gmail.com" className="text-dark font-semibold text-base sm:text-lg hover:text-primary transition-colors">
                   gckenny@gmail.com
                 </a>
               </div>
               <div>
-                <p className="text-muted text-xs sm:text-sm">{t.contact.websiteLabel}</p>
+                <p className="text-muted text-sm">{t.contact.websiteLabel}</p>
                 <p className="text-dark font-semibold text-base sm:text-lg">https://orz.tw</p>
               </div>
             </div>
@@ -373,13 +373,13 @@ function App() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="mailto:gckenny@gmail.com">
-              <Button variant="primary" size="lg" className="gap-2 text-sm sm:text-base w-full sm:w-auto">
+              <Button variant="primary" size="lg" className="gap-2 text-base w-full sm:w-auto">
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 {t.contact.emailBtn}
               </Button>
             </a>
             <a href="https://line.me/ti/p/weX-WQHvTo" target="_blank" rel="noopener noreferrer">
-              <Button variant="primary" size="lg" className="gap-2 text-sm sm:text-base w-full sm:w-auto bg-[#06C755] hover:bg-[#05b34d]">
+              <Button variant="primary" size="lg" className="gap-2 text-base w-full sm:w-auto bg-[#06C755] hover:bg-[#05b34d]">
                 <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5" />
                 {t.contact.lineBtn}
               </Button>
@@ -390,12 +390,12 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-[#1c1917] dark:bg-stone-950 text-white py-6 sm:py-8 px-4 sm:px-6 text-center transition-colors duration-300">
-        <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mb-3 text-sm sm:text-base">
+        <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mb-3 text-base">
           <a href="/privacy/" className="text-stone-400 hover:text-white transition-colors">{t.footer.privacyLink}</a>
           <span className="text-stone-600">·</span>
           <a href="/terms/" className="text-stone-400 hover:text-white transition-colors">{t.footer.termsLink}</a>
         </div>
-        <p className="text-stone-400 text-sm sm:text-base">&copy; {t.footer.copyright}</p>
+        <p className="text-stone-400 text-base">&copy; {t.footer.copyright}</p>
       </footer>
     </div>
   )
