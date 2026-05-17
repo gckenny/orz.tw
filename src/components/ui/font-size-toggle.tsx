@@ -5,9 +5,9 @@ import { useI18n } from '@/i18n/context'
 type FontSize = 'small' | 'medium' | 'large'
 
 const fontSizeScales: Record<FontSize, number> = {
-  small: 0.875,
-  medium: 1,
-  large: 1.125,
+  small: 1,
+  medium: 1.125,
+  large: 1.25,
 }
 
 export function FontSizeToggle() {
@@ -56,9 +56,9 @@ export function FontSizeToggle() {
     >
       <span className="text-xs">A</span>
       <span className={cn(
-        fontSize === 'small' && 'text-xs',
-        fontSize === 'medium' && 'text-base',
-        fontSize === 'large' && 'text-lg'
+        fontSize === 'small' && 'text-base',
+        fontSize === 'medium' && 'text-lg',
+        fontSize === 'large' && 'text-xl'
       )}>A</span>
     </button>
   )
