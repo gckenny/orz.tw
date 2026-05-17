@@ -57,8 +57,8 @@ export function FontSizeToggle() {
       <span className="text-xs">A</span>
       <span className={cn(
         fontSize === 'small' && 'text-xs',
-        fontSize === 'medium' && 'text-sm',
-        fontSize === 'large' && 'text-base'
+        fontSize === 'medium' && 'text-base',
+        fontSize === 'large' && 'text-lg'
       )}>A</span>
     </button>
   )

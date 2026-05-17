@@ -49,7 +49,7 @@ export function LocaleToggle() {
                 setOpen(false)
               }}
               className={cn(
-                "w-full text-left px-4 py-2.5 text-sm transition-colors",
+                "w-full text-left px-4 py-2.5 text-base transition-colors",
                 "hover:bg-surface-alt",
                 key === locale
                   ? "text-primary font-semibold bg-surface-alt"

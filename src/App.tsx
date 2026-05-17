@@ -351,21 +351,21 @@ function App() {
           <div className="bg-surface-alt rounded-2xl p-6 sm:p-8 mb-8 transition-colors duration-300 border border-transparent dark:border-stone-700/50">
             <div className="space-y-4 sm:space-y-6">
               <div>
-                <p className="text-muted text-sm">{t.contact.companyLabel}</p>
+                <p className="text-muted text-base">{t.contact.companyLabel}</p>
                 <p className="text-dark font-semibold text-base sm:text-lg">{t.contact.companyName}</p>
               </div>
               <div>
-                <p className="text-muted text-sm">{t.contact.taxIdLabel}</p>
+                <p className="text-muted text-base">{t.contact.taxIdLabel}</p>
                 <p className="text-dark font-semibold text-base sm:text-lg">61231555</p>
               </div>
               <div>
-                <p className="text-muted text-sm">Email</p>
+                <p className="text-muted text-base">Email</p>
                 <a href="mailto:gckenny@gmail.com" className="text-dark font-semibold text-base sm:text-lg hover:text-primary transition-colors">
                   gckenny@gmail.com
                 </a>
               </div>
               <div>
-                <p className="text-muted text-sm">{t.contact.websiteLabel}</p>
+                <p className="text-muted text-base">{t.contact.websiteLabel}</p>
                 <p className="text-dark font-semibold text-base sm:text-lg">https://orz.tw</p>
               </div>
             </div>
