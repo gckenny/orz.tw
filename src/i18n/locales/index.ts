@@ -56,6 +56,9 @@ export const translations: Record<Locale, TranslationSchema> = {
 const localeList = Object.keys(translations) as Locale[]
 
 export function detectLocale(): Locale {
+  // SSR-safe default: prerender uses zh-TW so static HTML is the primary indexed content
+  if (typeof window === 'undefined') return 'zh-TW'
+
   const saved = localStorage.getItem('locale')
   if (saved && saved in translations) return saved as Locale
 

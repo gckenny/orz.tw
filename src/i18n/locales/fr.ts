@@ -4,6 +4,7 @@ export const fr: TranslationSchema = {
   nav: {
     about: 'À propos',
     services: 'Services',
+    portfolio: 'Réalisations',
     whyUs: 'Pourquoi nous',
     contact: 'Contact',
   },
@@ -36,6 +37,15 @@ export const fr: TranslationSchema = {
       { title: 'Développement de Systèmes sur Mesure', description: 'Des systèmes personnalisés conçus pour vos besoins uniques — des petits outils aux plateformes à grande échelle, nous donnons vie à votre vision.' },
     ],
   },
+  portfolio: {
+    heading: 'Réalisations',
+    subheading: 'Des solutions logicielles dédiées au monde de la natation',
+    items: [
+      { title: 'Swim Insights', description: "La plateforme de suivi des records de natation la plus complète de Taïwan, agrégeant les données de centaines de compétitions, dont les championnats nationaux par âge, les tournois juniors et les jeux régionaux. Offre la recherche de performances, le suivi des records personnels, l'estimation des horaires, l'analyse par IA et les plans d'entraînement. Disponible sur plusieurs plateformes : iOS, Android et Web." },
+      { title: 'Système de Gestion des Compétitions de Natation', description: "Un système opérationnel conçu pour les organisateurs d'événements de natation, couvrant l'ensemble du processus, de l'inscription au placement, à l'appel, au chronométrage et à la publication des résultats. Intègre de manière automatisée les équipements de chronométrage au système de résultats, ce qui non seulement améliore considérablement l'efficacité et la transparence, mais réduit également de manière drastique la charge de travail du personnel d'organisation. Déjà adopté par des événements majeurs tels que la Dream Cup et la XPORTS Cup." },
+      { title: "Système de Gestion de l'Équipe de Natation Long-An", description: "Un système de gestion interne sur mesure pour l'équipe de natation Long-An de Taipei, aidant les entraîneurs à gérer les profils des nageurs, les registres d'entraînement et les résultats des compétitions, avec un portail parental pour suivre la progression des enfants." },
+    ],
+  },
   whyUs: {
     heading: 'Pourquoi Nous Choisir',
     subheading: 'Votre Confiance, Notre Responsabilité',
@@ -59,6 +69,8 @@ export const fr: TranslationSchema = {
   },
   footer: {
     copyright: '2026 Wuti Studio. All rights reserved.',
+    privacyLink: 'Politique de Confidentialité',
+    termsLink: 'Conditions de Service',
   },
   a11y: {
     openMenu: 'Ouvrir le menu',

@@ -4,6 +4,7 @@ export const es: TranslationSchema = {
   nav: {
     about: 'Nosotros',
     services: 'Servicios',
+    portfolio: 'Portafolio',
     whyUs: 'Por qué elegirnos',
     contact: 'Contacto',
   },
@@ -36,6 +37,15 @@ export const es: TranslationSchema = {
       { title: 'Desarrollo de Sistemas a Medida', description: 'Sistemas personalizados construidos para sus necesidades únicas: desde pequeñas herramientas hasta plataformas a gran escala, hacemos realidad su visión.' },
     ],
   },
+  portfolio: {
+    heading: 'Portafolio',
+    subheading: 'Soluciones de software desarrolladas para el mundo de la natación',
+    items: [
+      { title: 'Swim Insights', description: 'La plataforma de seguimiento de récords de natación más completa de Taiwán, que agrega datos de cientos de competiciones, incluidos campeonatos nacionales por edades, torneos juveniles y juegos regionales. Ofrece consulta de marcas, seguimiento de mejores tiempos personales, estimación de horarios, análisis con IA y planes de entrenamiento. Disponible en múltiples plataformas: iOS, Android y Web.' },
+      { title: 'Sistema de Gestión de Competiciones de Natación', description: 'Un sistema de gestión operativa diseñado para organizadores de eventos de natación, que cubre todo el flujo desde inscripción, sembrado, llamada y cronometraje hasta la publicación de resultados. Implementa la integración automatizada entre los equipos de cronometraje y el sistema de resultados, lo que no solo mejora significativamente la eficiencia y la transparencia, sino que también reduce drásticamente la carga de trabajo del personal del evento. Ya adoptado por eventos importantes como la Dream Cup y la XPORTS Cup.' },
+      { title: 'Sistema de Gestión del Equipo de Natación Long-An', description: 'Un sistema de gestión interna desarrollado a medida para el Equipo de Natación Long-An de Taipéi, que ayuda a los entrenadores a gestionar los perfiles de los nadadores, los registros de entrenamiento y los resultados de las competiciones, con un portal para padres que permite monitorear el progreso de sus hijos.' },
+    ],
+  },
   whyUs: {
     heading: 'Por Qué Elegirnos',
     subheading: 'Su Confianza, Nuestra Responsabilidad',
@@ -59,6 +69,8 @@ export const es: TranslationSchema = {
   },
   footer: {
     copyright: '2026 Wuti Studio. All rights reserved.',
+    privacyLink: 'Política de Privacidad',
+    termsLink: 'Términos del Servicio',
   },
   a11y: {
     openMenu: 'Abrir menú',

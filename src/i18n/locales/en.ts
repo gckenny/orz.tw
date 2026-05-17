@@ -4,6 +4,7 @@ export const en: TranslationSchema = {
   nav: {
     about: 'About',
     services: 'Services',
+    portfolio: 'Portfolio',
     whyUs: 'Why Us',
     contact: 'Contact',
   },
@@ -36,6 +37,15 @@ export const en: TranslationSchema = {
       { title: 'Custom System Development', description: 'Tailored systems built for your unique needs — from small tools to large-scale platforms, we bring your vision to life.' },
     ],
   },
+  portfolio: {
+    heading: 'Portfolio',
+    subheading: 'Software solutions built for the swimming community',
+    items: [
+      { title: 'Swim Insights', description: "Taiwan's most comprehensive swimming records tracking platform, aggregating data from hundreds of competitions including national age-group meets, junior championships, and regional games. Features performance lookup, personal best tracking, race schedule estimation, AI analysis, and training plans. Available across multiple platforms: iOS, Android, and Web." },
+      { title: 'Swim Meet Management System', description: 'A meet operations system designed for swim event organizers, covering the full workflow from registration, seeding, marshalling, and timing to results publication. Features automated integration between timing equipment and the results system, significantly improving event efficiency and information transparency while drastically reducing the workload of meet staff. Already adopted by major events such as the Dream Cup and the XPORTS Cup.' },
+      { title: 'Long-An Swim Team Management System', description: "A custom-built internal management system for the Taipei Long-An Swim Team, helping coaches manage swimmer profiles, training records, and competition results, with a parent portal for monitoring children's training progress." },
+    ],
+  },
   whyUs: {
     heading: 'Why Choose Us',
     subheading: 'Your Trust, Our Responsibility',
@@ -59,6 +69,8 @@ export const en: TranslationSchema = {
   },
   footer: {
     copyright: '2026 Wuti Studio. All rights reserved.',
+    privacyLink: 'Privacy Policy',
+    termsLink: 'Terms of Service',
   },
   a11y: {
     openMenu: 'Open menu',

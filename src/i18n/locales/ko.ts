@@ -4,6 +4,7 @@ export const ko: TranslationSchema = {
   nav: {
     about: '회사 소개',
     services: '서비스',
+    portfolio: '포트폴리오',
     whyUs: '강점',
     contact: '문의하기',
   },
@@ -36,6 +37,15 @@ export const ko: TranslationSchema = {
       { title: '맞춤형 시스템 개발', description: '소규모 도구부터 대규모 플랫폼까지, 고객의 고유한 요구 사항에 맞춰 비전을 현실로 구현하는 맞춤형 시스템을 제작합니다.' },
     ],
   },
+  portfolio: {
+    heading: '포트폴리오',
+    subheading: '수영 분야에 특화된 소프트웨어 성과',
+    items: [
+      { title: 'Swim Insights (游泳成績通)', description: '대만 최대 규모의 수영 기록 추적 플랫폼. 전국 연령별 대회, 청소년 선수권, 지역 대회 등 수백 개 대회 데이터를 통합 제공합니다. 선수 기록 검색, 개인 최고 기록 추적, 경기 일정 예측, AI 분석, 훈련 계획 기능을 갖추고 있으며 iOS, Android, Web 등 여러 플랫폼을 지원합니다.' },
+      { title: '수영 대회 운영 시스템', description: '수영 대회 주최자를 위해 설계된 운영 관리 시스템. 접수, 편성, 검록, 계시, 성적 발표까지 전 과정을 다루며, 계시기와 성적 시스템의 자동 연동을 구현하여 대회 운영의 효율성과 정보의 투명성을 크게 향상시킬 뿐만 아니라 운영 인력의 업무 부담을 대폭 줄여줍니다. 드림 컵, XPORTS 컵 등 주요 대회에서 채택된 실적이 있습니다.' },
+      { title: '룽안 수영팀 관리 시스템', description: '타이베이 룽안 수영팀을 위해 맞춤 제작된 내부 관리 시스템. 코치가 선수 정보, 훈련 기록, 대회 성적을 관리할 수 있으며, 학부모 포털을 통해 자녀의 훈련 진행 상황을 확인할 수 있습니다.' },
+    ],
+  },
   whyUs: {
     heading: '우리를 선택해야 하는 이유',
     subheading: '고객의 신뢰, 우리의 책임',
@@ -59,6 +69,8 @@ export const ko: TranslationSchema = {
   },
   footer: {
     copyright: '2026 Wuti Studio. All rights reserved.',
+    privacyLink: '개인정보 처리방침',
+    termsLink: '서비스 약관',
   },
   a11y: {
     openMenu: '메뉴 열기',

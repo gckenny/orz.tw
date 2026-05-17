@@ -2,6 +2,7 @@ export interface TranslationSchema {
   nav: {
     about: string
     services: string
+    portfolio: string
     whyUs: string
     contact: string
   }
@@ -27,6 +28,11 @@ export interface TranslationSchema {
     subheading: string
     items: { title: string; description: string }[]
   }
+  portfolio: {
+    heading: string
+    subheading: string
+    items: { title: string; description: string }[]
+  }
   whyUs: {
     heading: string
     subheading: string
@@ -45,6 +51,8 @@ export interface TranslationSchema {
   }
   footer: {
     copyright: string
+    privacyLink: string
+    termsLink: string
   }
   a11y: {
     openMenu: string

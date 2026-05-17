@@ -4,6 +4,7 @@ export const zhTW: TranslationSchema = {
   nav: {
     about: '關於我們',
     services: '服務項目',
+    portfolio: '實績展示',
     whyUs: '為何選擇我們',
     contact: '聯繫我們',
   },
@@ -36,6 +37,15 @@ export const zhTW: TranslationSchema = {
       { title: '客製化系統開發', description: '針對您的獨特需求，量身打造專屬系統，從小型工具到大型平台，我們都能為您實現。' },
     ],
   },
+  portfolio: {
+    heading: '實績展示',
+    subheading: '深耕游泳領域的軟體成果',
+    items: [
+      { title: '游泳成績通（Swim Insights）', description: '台灣最完整的游泳成績追蹤平台，整合全國分齡賽、青少年游泳錦標賽、地方運動會等數百場賽事資料，提供選手成績查詢、PB 追蹤、賽程預估、AI 分析與訓練計畫等功能。支援 iOS、Android 與 Web 多平台。' },
+      { title: '游泳比賽－賽務系統', description: '為游泳賽事主辦單位設計的賽務管理系統，涵蓋報名、編排、檢錄、計時、成績發布全流程，並實現計時器自動化串接成績系統，不僅大幅提升賽事進行效率與資訊透明度，更顯著降低賽務人員的工作負擔。已成功應用於夢想盃、XPORTS 盃等知名賽事。' },
+      { title: '龍安泳隊管理系統', description: '為北市龍安泳隊量身打造的內部管理系統，協助教練管理選手資料、訓練紀錄與比賽成績，並支援家長端查看孩子的訓練進度。' },
+    ],
+  },
   whyUs: {
     heading: '為何選擇我們',
     subheading: '您的信任，我們的責任',
@@ -59,6 +69,8 @@ export const zhTW: TranslationSchema = {
   },
   footer: {
     copyright: '2026 Wuti Studio. All rights reserved.',
+    privacyLink: '隱私權政策',
+    termsLink: '服務條款',
   },
   a11y: {
     openMenu: '開啟選單',

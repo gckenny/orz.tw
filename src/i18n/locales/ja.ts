@@ -4,6 +4,7 @@ export const ja: TranslationSchema = {
   nav: {
     about: '私たちについて',
     services: 'サービス',
+    portfolio: '実績',
     whyUs: '選ばれる理由',
     contact: 'お問い合わせ',
   },
@@ -36,6 +37,15 @@ export const ja: TranslationSchema = {
       { title: 'カスタムシステム開発', description: 'お客様独自のニーズに合わせてシステムを構築します。小規模なツールから大規模なプラットフォームまで、お客様のビジョンを実現します。' },
     ],
   },
+  portfolio: {
+    heading: '実績紹介',
+    subheading: '水泳分野に特化したソフトウェアの実績',
+    items: [
+      { title: 'Swim Insights（游泳成績通）', description: '台湾で最も包括的な水泳記録追跡プラットフォーム。全国年齢別大会、ジュニア選手権、地方競技会など、数百の大会データを統合。選手の記録検索、自己ベスト追跡、レーススケジュール予測、AI分析、トレーニング計画などの機能を提供します。iOS、Android、Web などマルチプラットフォームに対応。' },
+      { title: '水泳大会運営システム', description: '水泳大会の主催者向けに設計された運営管理システム。エントリー、組合せ、招集、計時、成績発表まで全プロセスをカバーし、計時器と成績システムの自動連携を実現し、大会運営の効率と情報の透明性を大幅に向上させるだけでなく、運営スタッフの負担を大きく軽減します。「夢想盃」「XPORTS 盃」など主要大会で採用された実績があります。' },
+      { title: '龍安スイミングチーム管理システム', description: '台北・龍安スイミングチーム向けにカスタム開発された内部管理システム。コーチが選手プロフィール、トレーニング記録、大会成績を管理でき、保護者用ポータルでお子様のトレーニング進捗を確認できます。' },
+    ],
+  },
   whyUs: {
     heading: '選ばれる理由',
     subheading: 'あなたの信頼、私たちの責任',
@@ -59,6 +69,8 @@ export const ja: TranslationSchema = {
   },
   footer: {
     copyright: '2026 Wuti Studio. All rights reserved.',
+    privacyLink: 'プライバシーポリシー',
+    termsLink: '利用規約',
   },
   a11y: {
     openMenu: 'メニューを開く',

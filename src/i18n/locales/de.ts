@@ -4,6 +4,7 @@ export const de: TranslationSchema = {
   nav: {
     about: 'Über uns',
     services: 'Dienstleistungen',
+    portfolio: 'Referenzen',
     whyUs: 'Warum wir',
     contact: 'Kontakt',
   },
@@ -36,6 +37,15 @@ export const de: TranslationSchema = {
       { title: 'Individuelle Systementwicklung', description: 'Maßgeschneiderte Systeme für Ihre einzigartigen Bedürfnisse – von kleinen Tools bis zu großen Plattformen verwirklichen wir Ihre Vision.' },
     ],
   },
+  portfolio: {
+    heading: 'Referenzen',
+    subheading: 'Softwarelösungen für die Schwimmwelt',
+    items: [
+      { title: 'Swim Insights', description: 'Die umfassendste Plattform zur Verfolgung von Schwimmrekorden in Taiwan. Sie aggregiert Daten von hunderten Wettkämpfen, darunter nationale Altersklassen-Meisterschaften, Juniorenwettbewerbe und Regionalspiele. Funktionen umfassen Ergebnissuche, Bestzeit-Tracking, Wettkampfplan-Schätzung, KI-Analyse und Trainingspläne. Verfügbar auf mehreren Plattformen: iOS, Android und Web.' },
+      { title: 'Schwimmwettkampf-Verwaltungssystem', description: 'Ein Operations-System für Veranstalter von Schwimmwettkämpfen, das den gesamten Ablauf abdeckt — von Anmeldung, Setzung, Aufstellung, Zeitmessung bis zur Ergebnisveröffentlichung. Die automatisierte Anbindung der Zeitmessanlage an das Ergebnissystem steigert nicht nur die Effizienz und Informationstransparenz erheblich, sondern reduziert auch die Arbeitsbelastung des Wettkampfpersonals deutlich. Bereits bei großen Veranstaltungen wie dem Dream Cup und dem XPORTS Cup im Einsatz.' },
+      { title: 'Long-An Schwimmteam-Verwaltungssystem', description: 'Ein maßgeschneidertes internes Verwaltungssystem für das Long-An Schwimmteam aus Taipeh. Trainer können Schwimmerprofile, Trainingsaufzeichnungen und Wettkampfergebnisse verwalten, und ein Eltern-Portal ermöglicht die Verfolgung der Trainingsfortschritte ihrer Kinder.' },
+    ],
+  },
   whyUs: {
     heading: 'Warum wir',
     subheading: 'Ihr Vertrauen, unsere Verantwortung',
@@ -59,6 +69,8 @@ export const de: TranslationSchema = {
   },
   footer: {
     copyright: '2026 Wuti Studio. All rights reserved.',
+    privacyLink: 'Datenschutzerklärung',
+    termsLink: 'Nutzungsbedingungen',
   },
   a11y: {
     openMenu: 'Menü öffnen',

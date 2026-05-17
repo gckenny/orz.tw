@@ -5,6 +5,8 @@ import { useI18n } from '@/i18n/context'
 
 export function ThemeToggle() {
   const [isDark, setIsDark] = useState(() => {
+    // SSR-safe: assume dark default (matches index.html inline script default)
+    if (typeof document === 'undefined') return true
     // Inline script in index.html already applied the class, read from DOM
     return document.documentElement.classList.contains('dark')
   })

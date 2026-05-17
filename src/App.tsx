@@ -13,7 +13,10 @@ import {
   Mail,
   Menu,
   X,
-  MessageSquare
+  MessageSquare,
+  Smartphone,
+  ClipboardList,
+  UsersRound
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
@@ -25,9 +28,10 @@ import { HeroBackground } from '@/components/ui/hero-background'
 import { useI18n } from '@/i18n/context'
 
 const serviceIcons = [Monitor, Cog, Waves, Trophy, RefreshCw, BarChart3]
+const portfolioIcons = [Smartphone, ClipboardList, UsersRound]
 const featureIcons = [Target, MessageCircle, Zap, Wrench]
 
-const sections = ['hero', 'about', 'services', 'why-us', 'contact']
+const sections = ['hero', 'about', 'services', 'portfolio', 'why-us', 'contact']
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -37,6 +41,7 @@ function App() {
   const navItems = [
     { label: t.nav.about, href: '#about' },
     { label: t.nav.services, href: '#services' },
+    { label: t.nav.portfolio, href: '#portfolio' },
     { label: t.nav.whyUs, href: '#why-us' },
     { label: t.nav.contact, href: '#contact' }
   ]
@@ -281,6 +286,33 @@ function App() {
         </div>
       </section>
 
+      {/* Portfolio Section */}
+      <section id="portfolio" className="py-16 md:py-24 px-4 sm:px-6 bg-surface transition-colors duration-300">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark mb-3">{t.portfolio.heading}</h2>
+            <p className="text-muted text-base sm:text-lg">{t.portfolio.subheading}</p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {t.portfolio.items.map((item, i) => {
+              const Icon = portfolioIcons[i]
+              return (
+                <Card key={i} className="p-6 sm:p-8">
+                  <CardHeader>
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-primary dark:bg-teal-600 rounded-xl flex items-center justify-center mb-4 shadow-sm dark:shadow-teal-900/30">
+                      <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white dark:text-teal-50" />
+                    </div>
+                    <CardTitle className="text-lg sm:text-xl">{item.title}</CardTitle>
+                    <CardDescription className="text-sm sm:text-base">{item.description}</CardDescription>
+                  </CardHeader>
+                </Card>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Why Us Section */}
       <section id="why-us" className="py-16 md:py-24 px-4 sm:px-6 bg-primary dark:bg-stone-800 text-white transition-colors duration-300">
         <div className="max-w-6xl mx-auto">
@@ -358,6 +390,11 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-[#1c1917] dark:bg-stone-950 text-white py-6 sm:py-8 px-4 sm:px-6 text-center transition-colors duration-300">
+        <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mb-3 text-sm sm:text-base">
+          <a href="/privacy/" className="text-stone-400 hover:text-white transition-colors">{t.footer.privacyLink}</a>
+          <span className="text-stone-600">·</span>
+          <a href="/terms/" className="text-stone-400 hover:text-white transition-colors">{t.footer.termsLink}</a>
+        </div>
         <p className="text-stone-400 text-sm sm:text-base">&copy; {t.footer.copyright}</p>
       </footer>
     </div>

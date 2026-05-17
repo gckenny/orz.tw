@@ -4,6 +4,7 @@ export const pt: TranslationSchema = {
   nav: {
     about: 'Sobre',
     services: 'Serviços',
+    portfolio: 'Portfólio',
     whyUs: 'Por Que Nós',
     contact: 'Contato',
   },
@@ -36,6 +37,15 @@ export const pt: TranslationSchema = {
       { title: 'Desenvolvimento de Sistemas Personalizados', description: 'Sistemas sob medida construídos para suas necessidades únicas — de pequenas ferramentas a plataformas de grande escala, damos vida à sua visão.' },
     ],
   },
+  portfolio: {
+    heading: 'Portfólio',
+    subheading: 'Soluções de software desenvolvidas para a comunidade da natação',
+    items: [
+      { title: 'Swim Insights', description: 'A plataforma de rastreamento de recordes de natação mais completa de Taiwan, agregando dados de centenas de competições, incluindo campeonatos nacionais por idade, torneios juvenis e jogos regionais. Oferece consulta de resultados, acompanhamento de melhores tempos pessoais, estimativa de horários, análise por IA e planos de treinamento. Disponível em múltiplas plataformas: iOS, Android e Web.' },
+      { title: 'Sistema de Gestão de Competições de Natação', description: 'Um sistema operacional projetado para organizadores de eventos de natação, cobrindo todo o fluxo desde inscrição, semeadura, chamada e cronometragem até publicação de resultados. Implementa a integração automatizada entre os cronômetros e o sistema de resultados, o que não apenas melhora significativamente a eficiência e a transparência, mas também reduz drasticamente a carga de trabalho da equipe de organização. Já adotado por grandes eventos como Dream Cup e XPORTS Cup.' },
+      { title: 'Sistema de Gestão da Equipe de Natação Long-An', description: 'Um sistema de gestão interna personalizado para a Equipe de Natação Long-An de Taipé, ajudando os treinadores a gerenciar perfis de nadadores, registros de treinamento e resultados de competições, com um portal para pais acompanharem o progresso dos filhos.' },
+    ],
+  },
   whyUs: {
     heading: 'Por Que Escolher-nos',
     subheading: 'Sua Confiança, Nossa Responsabilidade',
@@ -59,6 +69,8 @@ export const pt: TranslationSchema = {
   },
   footer: {
     copyright: '2026 Wuti Studio. All rights reserved.',
+    privacyLink: 'Política de Privacidade',
+    termsLink: 'Termos de Serviço',
   },
   a11y: {
     openMenu: 'Abrir menu',
