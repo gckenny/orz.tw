@@ -21,6 +21,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Pin root font-size to 16px so Tailwind rem-based utilities render at the intended scale, regardless of browser/system font-size preferences. FontSizeToggle still overrides this at runtime when the user picks small/large. */
+    font-size: 16px;
   }
 
   body {
